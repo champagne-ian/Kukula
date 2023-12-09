@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #ffffff;
+    margin: 0;
+    font-family: "Neue Montreal" sans-serif;
+}
+
+p{
+    font-family: "Neue Montreal" sans-serif;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+.subContainer-Left {
+    width: 30%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    justify-content: space-evenly;
+    margin: 50px;
+    font-size: 25px;
+ 
+}
+#div-reservas-row{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#div-reservas-row h1, h3 {
+    margin: 5px 0px;
+}
+
+.subContainer-Right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.div-subcontainerTop{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1px;
+    
+}
+
+.div-subcontainerCenter{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1px;
+}
+
+.div-subcontainerBottom{
+    
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1px;
+}
+
+#div-imgs{
+    justify-items: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    margin: 2%;
+}
+
+h1{
+    text-align: left;
+}
+.btn{
+	border-radius: 5px;
+	display: inline-block;
+	padding: 20px 15px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}
+.btn-green{
+	margin: 60px 60px;
+    color: rgb(0, 0, 0);
+	background-color: #f7a24c;
+}
+.btn-green:hover{
+	background-color: #cf7216;	
+}
+.btn-green:active{
+	background-color: #f7a24c;
+}
+
+.container-header{ /* Este div contiene todo el header, incluyendo img, logo y opciones  */
+    position: relative;
+    height: 150px;
+}
+.container-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.kukula-logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+.kukula-logo img{
+    max-width: 10%;
+}
+.nav-bar{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 25px;
+    font-size: 25px;
+}
+.field {
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+.center-content {
+    text-align: center;
+}
+.nav-bar div {
+    width: 50%;
+}
+.kukula-logo div {
+    width: 35%;
+}
+.social-links img{
+    width: 40px;
+    margin: 0 10px;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: #FFFF;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.footer-menu a:hover{
+    color: black;
+}
+footer{
+    padding-top: 15px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFF;
+    margin-top: 75px;
+}
+.box{
+    background-color: #F27C04;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    height: 200px;
+}
+.footer-div{
+    display: block;
+}
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+}

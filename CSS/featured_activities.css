@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container-ActivityTypes, .container-FeaturedTours{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.activity-types{
+    border: 1px solid #091d30;
+    border-radius: 50px;
+    width: 275px;
+    height: 300px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px;
+}
+.activity-types img{
+    width: 150px;
+    height: 150px;
+}
+.activity-types h1, .activity-content h1{
+    text-decoration: none;
+    color: #f27c04;
+    font-weight: bold;
+    text-align: center;
+}
+.activity-types h2, .activity-content h2{
+    text-align: center;
+}
+.activity-types button{
+    border: none;
+    background-color: #FFFF;
+}
+.choose-destiny{
+    text-decoration: none;
+    color: #091d30;
+    font-weight: bold;
+    font-size: 71px;
+    text-align: center;
+}
+.featured-tours{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width:80%;
+}
+.featured-activities{
+    border: 1px solid #091d30;
+    border-radius: 50px;
+    width: 275px;
+    height: 450px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px;
+}
+.activity-photo{
+    height: 50%;
+}
+.activity-content{
+    height: 50%;
+    display: block;
+    align-items: center;
+    
+}
+.activity-photo img{
+    width: 275px;
+    border-radius: 30px;
+}
+.activity-content button{
+    background-color: #f27c04;
+    border: none;
+    border-radius: 30px;
+    width: 255px;
+    height: 50px;
+    font-size: 20px;
+    color: #091d30;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.newsletter-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 7%;
+    width: 100%;
+    background-color: #6fab83;
+    border-radius: 80px;
+}
+#newsletter-content{
+    display: block;
+    margin-left: 15%;
+}
+#newsletter-content h1{
+    font-size: 33px;
+    color: #FFFF;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+#newsletter-content label{
+    color: #FFFF;
+    font-size: 20px;
+}
+#newsletter-content input{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: #B5D4C0;
+    padding: 3px;
+}
+#newsletter-content button{
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: #B5D4C0;
+    border: none;
+    font-weight: bold;
+    height: 25px;
+    margin-left: 35%;
+}
+#newsletter-logo img{
+    height: 230px;
+    margin-right: 100px;
+}
+
+@media (max-width: 768px) {
+    .newsletter-box {
+        flex-direction: column;
+        align-items: center;
+        /* margin: 5% 5%; */
+    }
+
+    #newsletter-content {
+        display: block;
+        }
+
+    #newsletter-content h1 {
+        font-size: 28px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    #newsletter-content label {
+        font-size: 18px;
+    }
+    #newsletter-content input{
+        display: block;
+        margin-top: 10px;
+        width: 80%;
+        border-radius: 50px;
+        border: none;
+        background-color: #B5D4C0;
+    }
+
+    #newsletter-logo img {
+        height: 230px;
+        margin: 0;
+    }
+}

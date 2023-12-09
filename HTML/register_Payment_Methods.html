@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../Media/kukula_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de pago</title>
+    <link rel="stylesheet" href="../CSS/kukula_mainpage.css">
+    <link rel="stylesheet" href="../CSS/register_business.css">
+
+</head>
+
+<body>
+    <div class="container-header">
+        <div class="container-nav">
+            <header>
+                <div class="kukula-logo">
+                    <img src="../Media/LogoWeb-Black.png" alt="">
+                </div>
+
+                <div class="nav-bar">
+                    <a id="registry_id" href="../HTML/kukula_mainpage.html">Inicio</a>
+                    <a id="registry_id" href="../HTML/kukula_servicios_mainpage.html">Servicios</a>
+                    <a id="registry_id" href="../HTML/WLabs_mainpage.html">Sobre Nosotros</a>
+                    <a id="registry_id" href="../HTML/help_page.html">Centro de ayuda</a>
+                    <a href="../HTML/login.html" onclick="SignOut()">Cerrar Sesion</a>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container-registry">
+
+        <div class="container-left">
+
+            <div id="left-menu">
+                <h1>Informacion de la cuenta</h1>
+
+                <button id="pRedirectProfile">
+                    <h1><a id="left-menu-a">Cuenta</a></h1>
+                </button>
+
+                <button id="pRedirectReservations">
+                    <h1><a id="left-menu-a">Reservas</a></h1>
+                </button>
+
+                <button id="pRedirectPaymentMethod">
+                    <h1><a id="left-menu-a">Metodos de pago</a></h1>
+                </button>
+
+                <button id="pRedirectBusiness">
+                    <h1><a id="left-menu-a">Negocios</a></h1>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="container-right">
+            <div id="right-menu">
+                <form action="" id="business-register-form">
+                    <label for="payment-method-number">Numero de tarjeta</label>
+                    <input type="number" name="" id="payment-method-number" oninput="limitDigits(this, 16)">
+
+                    <label for="name-card">Nombre en la tarjeta</label>
+                    <input type="text" name="" id="name-card">
+
+                    <label for="card-expire-date">Fecha de expiracion</label>
+
+                    <label for="mmEXP">Mes (MM)</label>
+                    <input type="number" name="" id="mmEXP" oninput="limitDigits(this, 2)">
+
+                    <label for="yyEXP">Año (YY)</label>
+                    <input type="number" name="" id="yyEXP" oninput="limitDigits(this, 2)">
+
+                    <label for="cvv">CVV</label>
+                    <input type="number" name="" id="cvv" oninput="limitDigits(this, 3)">
+
+                    <button id="business-register-button" type="button"
+                        onclick="validatePaymentMethod()">Registrar</button>
+                </form>
+            </div>
+
+            <div id="tableContainer">
+                <table id="tableCards">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Numero Tarjeta</th>
+                            <th>Expiracion</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbdcards">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-div">
+        <footer class="box">
+            <div class="social-links">
+                <a href="https://www.facebook.com/">
+                    <img src="../Media/Facebook (1).png" alt="">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="../Media/X.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../Media/Instagram.png" alt="">
+                </a>
+                <a href="https://www.tiktok.com/">
+                    <img src="../Media/TikTok.png" alt="">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="../HTML/kukula_mainpage.html">Inicio</a>
+                <a href="../HTML/kukula_servicios_mainpage.html">Servicios</a>
+                <a href="../HTML/WLabs_mainpage.html">Sobre Nosotros</a>
+                <a href="../HTML/help_page.html">Ayuda</a>
+            </div>
+
+            <div class="about-us">
+                <p>Kukula™ © Diseño por WLabs - 2023 - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/utilities.js"></script>
+    <script src="../JS/Services/generalService.js"></script>
+    <script src="../JS/Controllers/redirect_controller.js"></script>
+    <script src="../JS/Controllers/manage_paymentMethods.js"></script>
+
+</body>
+
+</html>

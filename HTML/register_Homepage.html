@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../Media/kukula_icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queremos conocerte!</title>
+    <link rel="stylesheet" href="../CSS/register_homepage.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="register_banner">
+            <h2>Registro</h2>
+        </div>
+
+        <div id="content">
+            <div id="register-left-column">
+                <input type="hidden" id="txt_id">
+                <div class="input-box">
+                    <label for="txtname">Ingresa tu nombre</label>
+                    <input type="text" placeholder="Ingresa tu nombre" id="txtname">
+                </div>
+                <div class="input-box">
+                    <label for="txtlastName">Ingresa tu primer appellido</label>
+                    <input type="text" placeholder="Ingresa tu primer apellido" id="txtlastName">
+                </div>
+                <div class="input-box">
+                    <label for="txtSecondlastName">Ingresa tu segundo appelido <b>(opcional)</b></label>
+                    <input type="text" placeholder="Ingresa tu segundo apellido" id="txtSecondlastName">
+                </div>
+                <div class="input-box">
+                    <label for="txtEmail">Ingresa tu email</label>
+                    <input type="email" placeholder="Ingresa tu email" id="txtEmail">
+                </div>
+                <div class="input-box">
+                    <label for="date">Ingresa tu fecha de nacimiento</label>
+                    <input type="date" placeholder="Ingresa tu fecha de nacimiento" id="date" min="1930-01-01">
+                    <h1 id="edad"></h1>
+                </div>
+            </div>
+
+            <div id="register-right-column">
+                <div class="input-box">
+                    <label for="showAge">Tu edad</label>
+                    <input type="number" id="showAge" readonly>
+                </div>
+                <div class="input-box">
+                    <label for="txtId">Ingresa tu ID</label>
+                    <input type="number" placeholder="Ingresa tu ID" id="txtId">
+                </div>
+                <div class="input-box">
+                    <label for="txtAddress">Ingresa tu direccion</label>
+                    <input type="text" placeholder="Ingresa tu direccion" id="txtAddress">
+                </div>
+                <div class="input-box">
+                    <label for="txtPwd">Ingresa tu contraseña</label>
+                    <input type="password" placeholder="Ingresa tu contraseña" id="txtPwd">
+                </div>
+                <div class="input-box">
+                    <label for="txtConfirmPwd">Confirmar tu contraseña</label>
+                    <input type="password" placeholder="Confirmar tu contraseña" id="txtConfirmPwd">
+                </div>
+            </div>
+        </div>
+
+        <div id="register-footer">
+            <button type="button" id="user-register-button" onclick="validateuserForm()">Ingresar</button>
+            <div class="text-end">
+                <h3>¿Ya tienes cuenta? <a href="../HTML/login.html">Ingresa ahora</a></h3>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/utilities.js"></script>
+    <script src="../JS/Services/generalService.js"></script>
+    <script src="../JS/Controllers/manage_user_controller.js"></script>
+</body>
+
+</html>

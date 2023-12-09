@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+.container-user-tools{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+}
+.user-tools-header h1{
+    font-size: 38px;
+    margin-right: 50px;
+    color: #091d30;
+}
+.user-tools-left{
+    padding: 5px;
+}
+.user-tools-left input{
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+.user-tools-left input::placeholder {
+    text-align: center;
+}
+.container-users-table{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
+.container-users-table table{
+    width: 60%;
+    height: 180px;
+}
+.container-users-table table td{
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #091d30;
+}
+.container-users-table table th{
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #f27c04;
+}
+#user-tools-header h1{
+    font-size: 48px;
+    margin-right: 50px;
+    color: #091d30;
+}
+#reports-table{
+    width: 25%;
+    height: 180px;
+}
+#reports-table th{
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+#reports-table td{
+    font-size: 30px;
+}
+#deny-approve-btn button{
+    border-radius: 30px;
+    padding: 7px;
+    background-color: #F27C04;
+    border: none;
+    font-weight: bold;
+}
+#footer-div{
+    left: 0;
+    width: 100%;;
+}
+#admin-redirect{
+    background-color: #f27c04;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: #091d30;
+    margin-left: 2px;
+    margin-right: 2px;
+    /* margin: 1px; */
+}
+#position-redirect-btn{
+    align-items: center;
+    justify-content: center;
+}
+#position-redirect-btn a{
+    margin: 40px;
+    text-decoration: none;
+}
+#position-redirect-btn a:visited {
+    color: #091d30;
+}
+#admin-redirect a:visited{
+    color: #091d30;
+}
+@media screen and (max-width: 760px) {
+    .container-header{
+        height: 300px;
+    }
+    #user-tools-header h1 {
+        font-size: 24px;
+    }
+
+    .container-users-table{
+        margin-top: 50px;
+    }
+    .container-users-table table {
+        max-width: 90%;
+    }
+
+    .container-users-table table td,
+    .container-users-table table th {
+        font-size: 16px;
+    }
+    #footer-div{
+        position: relative;
+
+    }
+}
+#user-tools-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#actionsBtnsdiv{
+    align-items: center;
+    justify-content: center;
+}

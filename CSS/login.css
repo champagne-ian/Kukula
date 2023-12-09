@@ -1,0 +1,203 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Neue Montreal" sans-serif;
+    background-image: url(../Media/manuel-antonio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(0%, -50%);
+    width: 400px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: #e4d8d8d7;
+    border: 1px solid rgba(255, 255, 255, 0.03); 
+    color: #161515;
+    border-radius: 10px;
+}
+
+.center h1{
+    text-align: left;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.center form{
+    text-align: left;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #ffffff34;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-weight: 300;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #00000077;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #F27C04;
+    transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    Color:#F27C04
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+
+.Pass{
+    margin: -5px 0 20px 5px;
+    color: #ffffff58;
+    cursor: pointer;
+}
+
+.Pass:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    color: #FFFFFF;
+    background: #F1B616;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    border-color: #FFFFFF;
+    transition: .5s;
+}
+
+.signup{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #03030358;
+}
+
+.signup a{
+    color: #165bf18d;
+    text-decoration: none;
+}
+
+.signup a:hover{
+    text-decoration: underline;
+}
+
+.Img_logo img{
+    position: absolute;
+    max-width: 750px;
+    top: 100px;
+    bottom: 0px;
+}
+
+/*
+.footer-menu a{
+    text-decoration: none;
+    color: #FFFF;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.footer-menu a:hover{
+    color: black;
+}
+
+footer{
+    
+    padding-top: 15px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFF;
+
+}
+
+.footer-div{
+    display: block;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+*/

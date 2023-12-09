@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../Media/kukula_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kukula</title>
+    <link rel="stylesheet" href="../CSS/featured_activities.css">
+    <link rel="stylesheet" href="../CSS/reserve_registry.css">
+</head>
+
+<body>
+    <div class="container-header">
+        <div class="container-nav">
+            <header>
+                <div class="kukula-logo">
+                    <img src="../Media/LogoWeb-Black.png" alt="">
+                </div>
+
+                <div class="nav-bar">
+                    <button id="registry_id_start">
+                        <a id="registry_id">Inicio</a>
+                    </button>
+                    <a href="../HTML/kukula_servicios_mainpage.html">Servicios</a>
+                    <a href="../HTML/WLabs_mainpage.html">Sobre Nosotros</a>
+                    <a href="../HTML/help_page.html">Centro de ayuda</a>
+                    <button id="pRedirectProfile">Mi cuenta</button>
+                    <a href="../HTML/login.html" onclick="SignOut()">Cerrar Sesion</a>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container-PlaceInfo">
+        <div class="place-background">
+            <img src="../Media/riu.png" alt="">
+        </div>
+
+        <input type="hidden" name="" id="fBusinessName" value="Riu Guanacaste">
+        <input type="hidden" name="" id="fBusinessPrice" value="110">
+
+        <div class="place-info">
+            <p>Hotel Riu Guanacaste
+                <br><br>
+                Este hotel totalmente preparado para dar el mejor servicio a sus clientes dispone de piscina de agua
+                dulce y terraza-solárium. En el Riu Resort encontrarás también jacuzzi, gimnasio, baño de vapor y un
+                centro
+                de wellness con diferentes tratamientos y masajes. Todo lo que necesitas para conseguir el máximo
+                bienestar durante tu estancia.
+                <br><br>
+                Gracias al servicio de todo incluido podrás disfrutar la gran variedad de sabores tanto del restaurante
+                buffet como de todos los diferentes restaurantes
+                temáticos que el hotel dispone. Si tu estancia es por trabajo o negocio entonces el Hotel Riu Guanacaste
+                será ideal para ti.
+                En el RIU Resort hay cinco salas de conferencias modernas y completamente equipadas para que puedas
+                realizar reuniones o
+                conferencias de forma profesional y sencilla así como varios servicios que podrás solicitar.
+                <br><br>
+                Descubre las ofertas del Riu Guanacaste y ven a disfrutar de la playa, sol y del distinguido servicio de
+                Riu Hotels.
+            </p>
+        </div>
+        <div class="place-photos">
+            <img src="../Media/riu1.png" alt="">
+            <img src="../Media/riu2.png" alt="">
+            <img src="../Media/riu3.png" alt="">
+        </div>
+        <div class="place-text">
+            <h1 id="place-price">Desde los <b>$110</b></h1>
+        </div>
+        <h1 id="place-reserve">¿Listo para agendar
+            <br>
+            un nuevo tour?
+        </h1>
+    </div>
+
+    <div class="container-reserve">
+
+        <div id="reserve-form">
+            <h1>Selecciona la cantidad de personas y la fecha</h1>
+            <div class="container-reserve-form">
+                <div id="reserve-form-people">
+                    <img src="../Media/personas.png" alt="">
+                    <input type="number" id="reservation_people">
+                </div>
+                <div id="reserve-form-people">
+                    <img src="../Media/calendario.png" alt="">
+                    <input type="date" name="" id="reservationDateFrom">
+                </div>
+                <div id="reserve-form-people">
+                    <img src="../Media/calendario.png" alt="">
+                    <input type="date" name="" id="reservationDateTo">
+                </div>
+                <button type="submit" id="reserveButton">Agendar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-div">
+        <footer class="box">
+            <div class="social-links">
+                <a href="https://www.facebook.com/">
+                    <img src="../Media/Facebook (1).png" alt="">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="../Media/X.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../Media/Instagram.png" alt="">
+                </a>
+                <a href="https://www.tiktok.com/">
+                    <img src="../Media/TikTok.png" alt="">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="../HTML/kukula_mainpage.html">Inicio</a>
+                <a href="../HTML/kukula_servicios_mainpage.html">Servicios</a>
+                <a href="../HTML/WLabs_mainpage.html">Sobre Nosotros</a>
+                <a href="../HTML/help_page.html">Ayuda</a>
+                <a href="../HTML/register_Homepage.html">Registrarse</a>
+            </div>
+
+            <div class="about-us">
+                <p>Kukula™ © Diseño por WLabs - 2023 - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/utilities.js"></script>
+    <script src="../JS/Services/generalService.js"></script>
+    <script src="../JS/Controllers/redirect_fromReservation.js"></script>
+    <script src="../JS/Controllers/register_reservation.js"></script>
+
+</body>
+
+</html>

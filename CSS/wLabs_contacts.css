@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Media/Wlabslandingpage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wlabs-logo{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+}
+
+.wlabs-logo img{
+    max-width: 15%;
+}
+
+li, a {
+    font-family: "Neue Montreal", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 10%;
+}
+
+.NavLinks{
+    list-style: none;
+}
+
+.NavLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.NavLinks li a{
+    transition: all 0.3s ease 0s;
+}
+
+.NavLinks li a:hover {
+    color: #04daf2;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #04daf2;
+    color: #FFFFFF;
+}
+
+.footer-menu-contact a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 200;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.footer-menu-contact a:hover{
+    color: black;
+}
+
+.footer-div-contact{
+    padding-top: 15px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+    position: absolute;
+}
+
+.about-us-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    color: #000000;
+}
+.footer-menu-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+.Center h1{
+    font-family: "Neue Montreal", sans-serif;
+    font-weight: 600;
+    font-size: 6rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+form{
+    background: #FFFFFF;
+    display: flex;
+    width: fit-content;
+}
+
+form input{
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    height: 40px;
+    width: 450px;
+    font-size: 16px;
+}
+
+form button{
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    outline: none;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 0%;
+}
+
+form button:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}

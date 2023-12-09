@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../Media/kukula_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin: Negocios</title>
+    <link rel="stylesheet" href="../CSS/kukula_mainpage.css">
+    <link rel="stylesheet" href="../CSS/featured_activities.css">
+    <link rel="stylesheet" href="../CSS/register_business.css">
+    <link rel="stylesheet" href="../CSS/users_status.css">
+
+</head>
+
+<body>
+
+    <div class="container-header">
+        <div class="container-nav">
+            <header>
+                <div class="kukula-logo">
+                    <img src="../Media/LogoWeb-Black.png" alt="">
+                </div>
+
+                <div class="nav-bar">
+                    <a id="registry_id" href="../HTML/kukula_mainpage.html">Inicio</a>
+                    <a id="registry_id" href="">Servicios</a>
+                    <a id="registry_id" href="../HTML/WLabs_mainpage.html">Sobre Nosotros</a>
+                    <a href="../HTML/login.html" onclick="SignOut()">Cerrar Sesion</a>
+                </div>
+        </div>
+        </header>
+    </div>
+    </div>
+
+    <div class="container-user-tools">
+        <div class="user-tools-header">
+            <h1>Estado Negocios</h1>
+        </div>
+        <div class="user-tools-left">
+            <input type="text" placeholder="Buscar" required>
+        </div>
+    </div>
+
+    <div class="container-users-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Dueño</th>
+                    <th>Nombre del negocio</th>
+                    <th>Telefono</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tbdUsers">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="position-redirect-btn">
+        <td><a id="admin-redirect" href="../HTML/users_status.html">Estado Usuarios</a></td>
+        <td><a id="admin-redirect" href="../HTML/admin_reports.html">Reporteria Administrativa</a></td>
+    </div>
+
+    <div id="footer-div">
+        <footer class="box">
+            <div class="social-links">
+                <a href="https://www.facebook.com/">
+                    <img src="../Media/Facebook (1).png" alt="">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="../Media/X.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../Media/Instagram.png" alt="">
+                </a>
+                <a href="https://www.tiktok.com/">
+                    <img src="../Media/TikTok.png" alt="">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="../HTML/kukula_mainpage.html">Inicio</a>
+                <a href="../HTML/kukula_servicios_mainpage.html">Servicios</a>
+                <a href="../HTML/WLabs_mainpage.html">Sobre Nosotros</a>
+                <a href="../HTML/help_page.html">FAQ</a>
+                <a href="../HTML/register_Homepage.html">Registrarse</a>
+            </div>
+
+            <div class="about-us">
+                <p>Kukula™ © Diseño por WLabs - 2023 - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/axios@1.6.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/utilities.js"></script>
+    <script src="../JS/Services/generalService.js"></script>
+    <script src="../JS/Controllers/businessController.js"></script>
+</body>
+
+</html>

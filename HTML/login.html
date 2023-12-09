@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kukula Login</title>
+    <link rel="icon" href="../Media/kukula_icon.png">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+
+    <div class="center">
+        <h1>Ingresar</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="email" required id="input_user" autocomplete="off">
+                <label>Usuario</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required id="input_password" autocomplete="off">
+                <span></span>
+                <label>Contraseña</label>
+            </div>
+            <!-- <div class="Pass">
+                <a href="../HTML/reset_password.html">
+                    ¿Olvidaste la contraseña?
+                </a>
+            </div> -->
+            <button type="button" onclick="SignIn()">Ingresar</button>
+            <div class="signup">
+                ¿Aun no eres mienbro? <a href="../HTML/register_Homepage.html">Registrate</a>
+            </div>
+        </form>
+
+
+    </div>
+
+    <div class="Img_logo">
+        <a href="../HTML/kukula_mainpage.html">
+            <img src="../Media/kukula_icon.png" alt="Icono Kukula">
+        </a>
+    </div>
+
+</body>
+
+<script src="https://unpkg.com/axios@1.6.2/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../JS/utilities.js"></script>
+<script src="../JS/Services/generalService.js"></script>
+<script src="../JS/Controllers/loginController.js"></script>
+
+</html>

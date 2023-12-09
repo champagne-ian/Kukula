@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+#testimonials{
+    padding: 40px 0;
+    background: #FFFFFF;
+    color: #000000;
+    text-align: center;
+}
+
+#inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#border{
+    width: 160px;
+    height: 5px;
+    background: #F27C04;
+    margin: 26px auto;
+}
+
+#row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);   
+}
+
+#testimonial{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+}
+
+#name{
+   justify-content: center;
+}
+
+#stars{
+    justify-content: center;
+}

@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container-chart-page {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    height: 500px;
+}
+
+#container-cart-left {
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 35%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#reservesTbl {
+    width: 100%;
+    height: 65%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#reservesTbl th, #reservesTbl td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#reservesTbl th {
+    background-color: #F27C04;
+}
+
+#tftTotal {
+    font-weight: bold;
+}
+
+#container-cart-right {
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 35%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#to_pay_cart_CC {
+    justify-content: center;
+    text-align: left;
+    margin-top: 40px;
+}
+
+#users-CCs {
+    display: flex;
+    flex-direction: column;
+}
+
+#creditCardOptions {
+    border: 1px solid #F27C04;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#btnPay{
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    height: 100px;
+}
+#confirmPay{
+background-color: #f27c04;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: #091d30;
+    height: 70px;
+    width: 200px;
+    font-size: 20px;
+}
+
+
+
+
+
+

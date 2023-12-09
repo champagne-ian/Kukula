@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../Media/kukula_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kukula</title>
+    <link rel="stylesheet" href="../CSS/featured_activities_hospedaje.css">
+    <link rel="stylesheet" href="../CSS/hospedaje.css">
+</head>
+
+<body>
+    <div class="container-header">
+        <div class="container-nav">
+            <header>
+                <div class="kukula-logo">
+                    <img src="../Media/LogoWeb-Black.png" alt="">
+                </div>
+
+                <div class="nav-bar">
+                    <button id="registry_id_start">
+                        <a id="registry_id">Inicio</a>
+                    </button>
+                    <a href="../HTML/kukula_servicios_mainpage.html">Servicios</a>
+                    <a href="../HTML/WLabs_mainpage.html">Sobre Nosotros</a>
+                    <a href="../HTML/help_page.html">Centro de ayuda</a>
+                    <button id="pRedirectProfile">Mi cuenta</button>
+                    <a href="../HTML/login.html" onclick="SignOut()">Cerrar Sesion</a>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container-PlaceInfo">
+        <div class="place-background">
+            <img src="../Media/entretenimientomain.png" alt="">
+        </div>
+    </div>
+
+    <div class="H1_Playas">
+        <h1>Entretenimiento</h1>
+        <h3>¡Date risas hasta emociones extremas!</h3>
+    </div>
+
+    <div class="featured-activities_1">
+        <div class="activity-photo_1"> <img src="../Media/maga.png" alt="">
+        </div>
+        <div class="activity-content_1">
+            <h1>Cine Magaly</h1>
+            <h2>Para los amantes del cine</h2>
+            <button id="featuredToursMagaly">
+                Descubrir
+            </button>
+        </div>
+    </div>
+
+    <div class="featured-activities_2">
+        <div class="activity-photo_2"> <img src="../Media/teatro.png" alt="">
+        </div>
+        <div class="activity-content_2">
+            <h1>Teatro Nacional</h1>
+            <h2>Una de las maravillas del pais</h2>
+            <button id="featuredToursTeatro">
+                Descubrir
+            </button>
+        </div>
+    </div>
+
+    <div class="footer-div">
+        <footer class="box">
+            <div class="social-links">
+                <a href="https://www.facebook.com/">
+                    <img src="../Media/Facebook (1).png" alt="">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="../Media/X.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../Media/Instagram.png" alt="">
+                </a>
+                <a href="https://www.tiktok.com/">
+                    <img src="../Media/TikTok.png" alt="">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="../HTML/kukula_mainpage.html">Inicio</a>
+                <a href="../HTML/kukula_servicios_mainpage.html">Servicios</a>
+                <a href="../HTML/WLabs_mainpage.html">Sobre Nosotros</a>
+                <a href="../HTML/help_page.html">Ayuda</a>
+                <a href="../HTML/register_Homepage.html">Registrarse</a>
+            </div>
+
+            <div class="about-us">
+                <p>Kukula™ © Diseño por WLabs - 2023 - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/utilities.js"></script>
+    <script src="../JS/Services/generalService.js"></script>
+    <script src="../JS/Controllers/redirect_fromReservation.js"></script>
+    <script src="../JS/Controllers/entretenimeinto_redirect.js"></script>
+    <script src="../JS/Controllers/manage_userReservations.js"></script>
+</body>
+
+</html>

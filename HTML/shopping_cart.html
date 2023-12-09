@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../Media/kukula_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kukula Carrito</title>
+    <link rel="stylesheet" href="../CSS/kukula_mainpage.css">
+    <link rel="stylesheet" href="../CSS/register_business.css">
+    <link rel="stylesheet" href="../CSS/shopping_cart.css">
+    <link rel="stylesheet" href="../CSS/users_status.css">
+</head>
+
+<body>
+    <div class="container-header">
+        <div class="container-nav">
+            <header>
+                <div class="kukula-logo">
+                    <img src="../Media/LogoWeb-Black.png" alt="">
+                </div>
+
+                <div class="nav-bar">
+                    <a href="../HTML/kukula_mainpage.html">Inicio</a>
+                    <a href="../HTML/kukula_servicios_mainpage.html">Servicios</a>
+                    <a href="../HTML/WLabs_mainpage.html">Sobre Nosotros</a>
+                    <a href="../HTML/help_page.html">Centro de ayuda</a>
+                </div>
+        </div>
+        </header>
+    </div>
+
+
+    <div id="container-chart-page">
+        <div id="container-cart-left">
+            <h1 id="cart_chart">Tus Reservas</h1>
+            <table id="reservesTbl">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Estadia</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="tbdReservations"></tbody>
+                <tfoot id="tftTotal">
+                    <tr>
+                        <td colspan="2">Total a pagar:</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div id="container-cart-right">
+            <h1>Escoje tu tarjeta!</h1>
+            <div id="to_pay_cart_CC">
+                <form action="" id="users-CCs">
+                    <fieldset id="creditCardOptions">
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="btnPay">
+        <button id="confirmPay">Pagar</button>
+    </div>
+
+    <div id="footer-div">
+        <footer class="box">
+            <div class="social-links">
+                <a href="https://www.facebook.com/">
+                    <img src="../Media/Facebook (1).png" alt="">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="../Media/X.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../Media/Instagram.png" alt="">
+                </a>
+                <a href="https://www.tiktok.com/">
+                    <img src="../Media/TikTok.png" alt="">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <a href="../HTML/kukula_mainpage.html">Inicio</a>
+                <a href="../HTML/kukula_servicios_mainpage.html">Servicios</a>
+                <a href="../HTML/WLabs_mainpage.html">Sobre Nosotros</a>
+                <a href="../HTML/help_page.html">Ayuda</a>
+            </div>
+
+            <div class="about-us">
+                <p>Kukula™ © Diseño por WLabs - 2023 - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/utilities.js"></script>
+    <script src="../JS/Services/generalService.js"></script>
+    <script src="../JS/Controllers/manage_shoppingCart.js"></script>
+
+
+</body>
+
+</html>

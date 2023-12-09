@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Neue Montreal", sans-serif;
+}
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Media/cartago.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 810px; /* Ajusta según tus necesidades */
+    width: 100%;
+    background-color: #F9F9F9;
+    color: #333;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Añadido para contener las columnas */
+    height: 570px;
+}
+
+.wrapper h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.wrapper h2::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: #F1B616;
+    margin-bottom: 15px;
+}
+
+#register_banner{
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#register-left-column,
+#register-right-column {
+    display: block;
+    width: 59%; /* Ancho del 48% para dejar espacio entre las columnas */
+}
+#register-footer{
+    text-align: center;
+}
+.input-box label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+    text-align: center;
+}
+.input-box input{
+    display: block;
+    margin: 0 auto;
+}
+
+form .input-box input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    padding: 0 12px;
+    transition: border-color 0.3s;
+}
+
+.input-box{
+    height: 50px;
+    margin: 11px 0px;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #F1B616;
+    border-radius: 10px;
+    padding: 5px;
+    width: 55%;
+}
+
+button {
+    width: 26%;
+    height: 50px;
+    color: #FFF;
+    background: #F1B616;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+    margin: 10px 0;
+}
+
+button:hover {
+    background: #d49a0a;
+}

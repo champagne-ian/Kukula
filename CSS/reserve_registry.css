@@ -1,0 +1,373 @@
+body {
+    background-color: #FFFF;
+    margin: 0;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+.container-header {
+    position: relative;
+    height: 170px;
+    background-color: #FFFF;
+}
+
+.kukula-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.kukula-logo img {
+    max-width: 35%;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #091d30;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 30px;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .container-header {
+        height: 415px;
+    }
+
+    .kukula-logo,
+    .nav-bar {
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .kukula-logo img {
+        max-width: 80%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        right: 10px;
+    }
+
+    .nav-bar a {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+}
+
+.nav-bar div {
+    width: 50%;
+}
+
+.kukula-logo div {
+    width: 50%;
+}
+
+.social-links img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #FFFF;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.footer-menu a:hover {
+    color: black;
+}
+
+footer {
+    padding-top: 15px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFF;
+
+}
+
+.box {
+    background-color: #F27C04;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    height: 200px;
+}
+
+.footer-div {
+    display: block;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+}
+
+/* ESTO YA ES LA INFO DE LOS LOCALES  */
+
+.container-PlaceInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.place-background {
+    z-index: -1;
+}
+
+.place-background img {
+    width: 100%;
+    height: 600px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+#recomendar-button {
+    position: fixed;
+    top: 780px;
+    right: 20px;
+    background-color: #6fab83;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#recomendar-button:hover {
+    background-color: #008489;
+}
+
+.place-info {
+    width: 55%;
+    padding-left: 10%;
+    margin-top: 40px;
+}
+
+.place-info p {
+    display: block;
+    color: #091d30;
+    font-size: 2em;
+    justify-content: center;
+}
+
+.place-photos {
+    display: flex;
+    justify-content: center;
+}
+
+.place-photos img {
+    width: 275px;
+    height: 275px;
+    margin: 100px 50px;
+    border-radius: 30px;
+}
+
+.place-text {
+    display: block;
+}
+
+#place-price {
+    position: absolute;
+    right: 0;
+    margin-right: 350px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#place-reserve {
+    display: flex;
+    margin-top: 100px;
+    left: 0;
+    margin-left: 350px;
+    font-size: 50px;
+}
+
+#reserve-form {
+    display: flex;
+    flex-direction: column;
+    /* Cambiamos la dirección de los elementos a columna */
+    align-items: center;
+    /* Centramos horizontalmente los elementos en el contenedor */
+    margin: 5% 20% 7%;
+    /* Ajustamos los márgenes como desees */
+    width: 100%;
+    background-color: #6fab83;
+    border-radius: 80px;
+}
+
+#reserve-form h1 {
+    font-size: 33px;
+    color: #FFFF;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#reserve-form-people {
+    display: flex;
+    align-items: center;
+    /* Centramos verticalmente los elementos en este contenedor */
+    margin: 10px 0;
+    background-color: #FFFF;
+    border-radius: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 230px;
+    padding: 10px;
+}
+
+#reserve-form-people img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#reserve-form-people input {
+    padding: 5px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background-color: #008489;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 80px;
+    width: 150px;
+    height: 80px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #006f72;
+}
+
+@media (max-width: 768px) {
+    .place-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .place-photos img {
+        margin: 10px;
+        /* Ajusta el margen según tus necesidades */
+    }
+
+    #reserve-form h1 {
+        text-align: center;
+    }
+
+    #place-price {
+        position: static;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #place-reserve {
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    #reserve-form {
+        margin: 5% 5% 7%;
+        /* Ajusta los márgenes según tus necesidades */
+    }
+
+    #reserve-form-people {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .container-reserve-form {
+        display: block;
+    }
+
+    button[type="submit"] {
+        margin: 0 10px;
+    }
+}
+
+#pRedirectProfile{
+    text-decoration: none;
+    color: #091d30;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 30px;
+    font-size: 25px;
+    background-color: #ffff;
+    border: none;
+    font-family: "Neue Montreal Bold";
+}
+#registry_id_start {
+    border: none;
+    background-color: #ffff;
+    font-family: "Neue Montreal Bold";
+}

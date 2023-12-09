@@ -1,0 +1,335 @@
+body {
+    background-color: #FFFF;
+    margin: 0;
+}
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+
+div .container-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-header {
+    position: relative;
+    height: 200px;
+    background-color: #FFFF;
+}
+
+.kukula-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.kukula-logo img {
+    max-width: 35%;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #091d30;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 30px;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .container-header {
+        height: 415px;
+    }
+
+    .kukula-logo,
+    .nav-bar {
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .kukula-logo img {
+        max-width: 80%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        right: 10px;
+    }
+
+    .nav-bar a {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+}
+
+.nav-bar div {
+    width: 50%;
+}
+
+.kukula-logo div {
+    width: 50%;
+}
+
+.social-links img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #FFFF;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.footer-menu a:hover {
+    color: black;
+}
+
+footer {
+    padding-top: 15px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFF;
+    position: relative;
+
+}
+
+.box {
+    background-color: #F27C04;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    height: 200px;
+}
+
+.footer-div {
+    display: block;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+}
+
+.container-left {
+    width: 35%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-right {
+    display: flex;
+    width: 65%;
+    height: 800px;
+    margin-bottom: 50px;
+    /* flex-direction: column; */
+}
+#user-register-button{
+    background-color: #f27c04;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: #091d30;
+}
+#container-right{
+    display: flex;
+    width: 65%;
+    height: 1000px;
+    margin-bottom: 50px;
+}
+#container-right-reserves{
+    display: flex;
+    width: 65%;
+    height: 800px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+#left-menu {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    display: block;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+#left-menu-a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 55px;
+    color: #F27C04;
+    padding: 3px;
+}
+#left-menu-a a:visited{
+    color: #F27C04;
+}
+
+#right-menu {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    color: #091d30;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid #091d30;
+    border-radius: 30px;
+}
+
+#business-register-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+}
+#business-register-form label, input, select, textarea, button{
+    margin: 10px 0px;
+    border-radius: 20px;
+    color: #091d30;
+}
+#business-register-button{
+    background-color: #F27C04;
+    height: 50px;
+    border: none;
+}
+#chart-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+#column-details {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+}
+#column-details h2, h3{
+    margin: 5px 0px;
+}
+#reserve-container{
+    margin: 25px;
+}
+#user_reservations{
+    display: block;
+}
+#left-menu button{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    border: none;
+    background-color: #FFFF;
+    height: 100px;
+}
+#tableCards{
+    margin-top: 20px;
+    margin-left: 50px;
+    justify-content: space-between;
+    height: 100px;
+    width: 800px;
+}
+#tableCards th, #tableCards td {
+    padding: 12px;
+    text-align: left;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#tableCards tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+#tableCards tbody td:last-child {
+    text-align: center;
+}
+#tableCards tbody td{
+    width: 20px;
+    height: 20px;
+}
+#deleteCard {
+    background-color: #f27c04;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: #091d30;
+}
+#registry_id_start{
+    border: none;
+    background-color: #ffff;
+    font-family: "Neue Montreal";
+
+}
+#pay_reservations{
+    background-color: #f27c04;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: #091d30;
+    width: 30%;
+    height: 50px;
+}
+#adjustbtn{
+    margin-left: 20%;
+    margin-top: 50px;
+}

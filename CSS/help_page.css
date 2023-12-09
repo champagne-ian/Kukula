@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#help-chart{
+    text-decoration: none;
+    color: #091d30;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 35px;
+}
+#help-textarea{
+    border-radius: 30px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: px;
+}
+#help-button{
+    background-color: #F27C04;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+
+}

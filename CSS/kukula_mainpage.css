@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: local("NeueMontreal-Bold");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: local("NeueMontreal-Light");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Montreal Medium";
+    src: local("NeueMontreal-Medium");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: local("NeueMontreal-Regular");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1, h2, h3, p, span{
+    font-family: "Neue Montreal";
+}
+
+body{
+    background-color: #FFFF;
+    margin: 0;
+    /* font-family: "Neue Montreal" sans-serif; */
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container-header{ /* Este div contiene todo el header, incluyendo img, logo y opciones  */
+    position: relative;
+    height: 400px;
+}
+.container-background img{
+    width: 100%;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+.container-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.kukula-logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+.kukula-logo img{
+    max-width: 35%;
+}
+.nav-bar{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #FFFF;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 25px;
+    font-size: 25px;
+}
+@media (max-width: 768px) {
+    .container-header {
+        height: 415px;
+    }
+
+    .container-background img {
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+
+    .kukula-logo, .nav-bar {
+        position: relative;
+        text-align: center;
+        margin-top: 20px; 
+    }
+
+    .kukula-logo img {
+        max-width: 80%;
+    }
+
+    .nav-bar{
+        flex-direction: column;
+        right: 10px;
+    }
+    .nav-bar a {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+}
+.nav-bar div {
+    width: 50%;
+}
+.kukula-logo div {
+    width: 50%;
+}
+.social-links img{
+    width: 40px;
+    margin: 0 10px;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: #FFFF;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.footer-menu a:hover{
+    color: black;
+}
+footer{
+    padding-top: 15px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFF;
+
+}
+.box{
+    background-color: #F27C04;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    height: 200px;
+}
+.footer-div{
+    display: block;
+}
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+}
+#featuredToursMagaly a:visited{
+    color: black;
+    text-decoration: none;
+}
